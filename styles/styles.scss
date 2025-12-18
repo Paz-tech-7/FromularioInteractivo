@@ -1,2 +1,30 @@
+@use "reset" as reset;
+@use "colors" as color;
 @use "nav" as navegacion;
+@use "mixes" as mixes;
+
+body{
+    background-color: color.$backgroundPrimary;
+}
+
+
+.navegacion #lanzador:checked {
+    background-color: color.$backgroundSecondary;
+}
+
+main{
+    @include mixes.centrarElementos();
+}
+
+.main__formulario{
+    width: 50vw;
+    height: 50vh;
+    background-color: color.$backgroundSecondary;
+    color:color.$fontColorPrimary;
+}
+
+.main__formulario>h1{
+    @include mixes.centrarElementos();
+    background-color: color.$backgroundDark;
+}
 

@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="navegacion">
             <div class="menu-activador">
                 <input type="checkbox" id="lanzador" />
                 <label for="lanzador">
@@ -19,8 +19,29 @@
                     <span class="menu-activador-linea"></span>
                 </label>
             </div>
+                <ul class="nav__opciones">
+                    <li class="opciones__elemento">Inicio</li>
+                    <li class="opciones__elemento">Perfil</li>
+                    <li class="opciones__elemento">Crear</li>
+                    <li class="opciones__elemento">Registro</li>
+                </ul>
         </nav>
     </header>
+    <main>
+        <section class="main__formulario">
+            <h1>Inicio de sesión</h1>
+            <form>
+                <label for="usuario">Icono</label>
+                <input type="text" placeholder="Nombre de Usuario" required>
+                <label for="contrasena">Icono</label>
+                <input type="password" minlength="10" required>
+
+                <input type="submit" value="Iniciar Sesion">
+
+                <input type="checkbox" id="recordar"><label for="recordar">Recordarme</label>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>

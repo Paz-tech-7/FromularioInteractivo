@@ -1,0 +1,6 @@
+/*Centrar elementos con flex*/
+@mixin centrarElementos($justify: center, $align: center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}

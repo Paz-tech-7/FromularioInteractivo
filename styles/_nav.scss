@@ -1,7 +1,9 @@
+@use "colors" as color;
+
 .menu-activador {
-  width: 30px;
-  height: 20px;
-  margin: 100px auto;
+  width: 40px;
+  height: 25px;
+  margin:10px;
   #lanzador {
     position: absolute;
     left: -9999px;
@@ -15,7 +17,8 @@
   }
   .menu-activador-linea {
     height: 5px;
-    background-color:  #e2dede;
+    border-radius: 10px;
+    background-color:  color.$hamburguerMenuColor;
     opacity: 1;
     transform: translateY(0) rotate(0);
     transition: all 0.3s;
@@ -31,4 +34,13 @@
       transform: translateY(-9px)rotate(-45deg);
     }
   }
+
+}
+
+.navegacion > .nav__opciones{
+  display: none;
+}
+
+#lanzador:checked > .nav__opciones{
+  display: block;
 }
